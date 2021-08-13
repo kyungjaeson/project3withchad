@@ -67,12 +67,13 @@ class Trainer:
             if result in self.pokemon_bench:
                 if len(self.pokemon_bench) == 1:
                     print("\n YOU LOSE ")
+                    break
                 self.pokemon_bench.remove(result)
             else:
                 if len(self.pokemon_bench) == 1:
                     print("\n YOU WIN!!!!!!!!!!!!!!!!!!!!")
                 enemy_Trainer.pokemon_bench.remove(result)
-
+                    break
 
 class Pokemon:
 
